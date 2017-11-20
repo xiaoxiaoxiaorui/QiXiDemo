@@ -51,3 +51,10 @@ button {
 }
 .btnStop{ position: absolute; right: 50px; bottom: 100px;}
 .walkpaused{ animation-play-state: paused;}
+.sun{ background: url("../images/sun.png") no-repeat; position: absolute; z-index: 1; top: -30px; height: 201px; width: 201px; right: 40%;}
+.rotation{ animation-name: sunwalk; animation-duration: 30s;}
+@keyframes sunwalk {
+    0%{ transform: translateX(0) translateY(0);}
+    100%{ transform: translateX(-1000px) translateY(500px);}
+}
+
